@@ -138,11 +138,12 @@ export default function Page() {
         const html = await response.text();
         console.log('HTML:', html.substring(0, 500));
         
-        // استخراج JSON من الصفحة
-        const jsonMatch = html.match(/window\.__INITIAL_STATE__\s*=\s*({.*?});/s);
-        if (jsonMatch) {
-          const data = JSON.parse(jsonMatch[1]);
-          processInvoices(data);
+const response = await fetch(url, { credentials: 'include' });
+const html = await response.text();
+
+console.log('HTML:', html.substring(0, 500));
+
+// مؤقتًا بدون parsing
         }
       } catch (e) {
         alert('خطأ في القراءة');
