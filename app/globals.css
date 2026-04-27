@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-:root {
-  --crm-gradient-start: #0f0f23;
-}
-
 body {
   font-family: 'Tajawal', 'Inter', sans-serif;
 }
@@ -36,11 +32,8 @@ body {
   box-sizing: border-box;
 }
 
-.input-field::placeholder {
-  color: rgba(148, 163, 184, 0.6);
-}
-
-.input-field:focus {
+.input-field::placeholder { color: rgba(148, 163, 184, 0.6); }
+.input-field:focus { 
   border-color: rgba(99, 102, 241, 0.5);
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
   background: rgba(15, 23, 42, 0.95);
@@ -48,7 +41,6 @@ body {
   outline: none;
 }
 
-/* عشان الـ dropdown يبان كويس في الوضع الداكن */
 .input-field option {
   background: #0f172a;
   color: white;
@@ -114,9 +106,7 @@ body {
   transition: opacity 0.5s;
 }
 
-.crm-card:hover::before {
-  opacity: 1;
-}
+.crm-card:hover::before { opacity: 1; }
 
 .table-header {
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
@@ -143,9 +133,7 @@ body {
   vertical-align: middle;
 }
 
-.table-cell:hover {
-  background: rgba(99, 102, 241, 0.05);
-}
+.table-cell:hover { background: rgba(99, 102, 241, 0.05); }
 
 .status-badge {
   padding: 8px 16px;
