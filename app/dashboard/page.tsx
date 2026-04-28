@@ -386,7 +386,6 @@ export default function CRMSystem() {
   );
 }
 
-// --- SUB COMPONENTS ---
 
 const FollowUpModal = ({ customer, onClose, onSave }: any) => {
   const [date, setDate] = useState(customer.follow_up_date || '');
