@@ -355,7 +355,7 @@ export default function CRMSystem() {
           <CRMTable 
             customers={paginatedCustomers} 
             onDelete={deleteCustomer} 
-            onOpenFollowUp={(cust) => setFollowUpModal({ open: true, customer: cust })}
+            onOpenFollowUp={(cust: Customer) => setFollowUpModal({ open: true, customer: cust })}
             loading={loading} 
             page={page}
             setPage={setPage}
